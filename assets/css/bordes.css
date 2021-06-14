@@ -1,0 +1,19 @@
+. caja {
+    ancho :  400 px ;
+    altura :  400 px ;
+}
+
+. uno {
+    color de fondo :  # fafa31 ;
+    relleno :  20 px ;
+    margen inferior :  10 px ;
+    ancho del borde :  5 px ;
+    color del borde : negro;
+    estilo de borde : sólido;
+    radio del borde superior izquierdo :  20 px ;
+}
+
+. dos {
+    color de fondo :  # 22b822 ;
+    radio de borde :  50 % ;
+}

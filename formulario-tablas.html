@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Formularios y tablas</title>
+
+    </head>
+    <body>
+        <h1>Formularios y tablas</h1>
+        <table border="1">
+            <tr>
+                <th>8:00-9:00</th>
+                <th> lunes</th>
+                <th>martes</th>
+                <th>miercoles</th>
+                <th>jueves</th>
+                <th>viernes</th>
+                <th>sabado</th>
+            </tr>
+            <tr>
+                <tr>
+                <td>curso de udemy</td>
+                <td>bootcamp</td>
+                <td rowspan="4">ingles</td>>celda 3</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Curso de html</td>
+                <td>Curso de java</td>
+                <td>Curso de JS</td>
+                <td> Curso de Bootstrap</td>
+            </tr>
+        </table>
+        <hr />
+        <form method="POST">
+            
+            <h3>Registrate</h3>
+            <p>
+            <label for="">Nombre:</label>
+            <input type="text" />
+        </p>
+        <p>
+            <label for="">correo electronico:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label for="password">Contrasenia</label>
+            <input type="text" name="password" />
+        </p>
+        <p>
+            <label for="cumpleanios">Cumpleanios</label>
+            <input type="range" name="cumpleanio" min="200" max="1000" step="1" />
+        </p>
+        <p>
+            <select name="meses" id="">
+                <option value="">Enero</option>
+                <option value="">Febrero</option>
+                <option value="">Marzo</option>
+                <option value="">Abril</option>
+            </select>
+            <p>
+                <input type="checkbox" />
+                <label for="">Opcion 1</label>
+            </p>
+        </p>
+        <input type="submit" value="Registrar">
+        </form>
+
+    </body>
+</html>
