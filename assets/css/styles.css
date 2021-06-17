@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     color: purple;
     text-align: center;
@@ -30,4 +31,8 @@ div {
 
 .dos {
     background-color: blue;
+=======
+. color-texto {
+    color : amarillo;
+>>>>>>> b8c3b6f522c6bad86041de58e3f72b74adb51b16
 }
