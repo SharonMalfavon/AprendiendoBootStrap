@@ -1,47 +1,119 @@
-<<<<<<< HEAD
-<title>Bootcamp Java</title>
-</head>
-<body>
+<! DOCTYPE html >  <! - Etiqueta de apertura, le dice al navegador que estamos usando HTML5 ->
+< html >
+    <! - En primera instancia sólo se colocó la etiqueta, nuestras etiquetas principales son HEAD y BODY ->
+    < cabeza >
+        < meta  charset = " UTF-8 " /> <! - Las etiquetas metas no tienen cierre, pero por buenas prácticas es mejor cerrarlas, en este caso e sel /> ->
+        < title > Mi primera Pagina web </ title > <! - Como su nombre lo dice, nos permite poner el titulo de la página ->
+        
+    </ cabeza >
+    < cuerpo >
+        <! - Por buena práctica para el SEO sólo usamos 1 H1 ->
+        < h1 > Hola mi nombre es Yann </ h1 >  <! - Las h van de 1 a 6, van de mayor a menor. ->
+        < h2 > Hola, soy un H2 </ h2 >
+        < h3 > Hola, soy un H3 </ h3 >
+        < h4 > Hola, soy un H4 </ h4 >
+        < h5 > Hola, soy un H5 </ h5 >
+        < h6 > Hola, soy un H6 </ h6 >
 
-    
-    <!-- Este es un comentario -->
+        < h3 > Tipos de Textos: </ h3 >
+        Hola soy un texto que no está dentro de un parrafo.
+        < p > Esto es un parrafo </ p >  <! - Esta etiqueta es principalmente para textos ->
+        < p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur iure explicabo, quos sit deserunt hic nobis obcaecati dolor minima ipsum. ¿Un illum iusto omnis minima? Officiis, dicta vitae? Anuncio. </ p >
+        <! - Para usar negritas usamos la etiqueta Strong ->
+        < p > Lorem ipsum < fuerte > sit amet consectetur adipisicing elit. </ fuerte > Pariatur exercitationem corrupti, architecto quae velit id illo sint quaerat praesentium perspiciatis itaque dicta consectetur illum, facere aliquid! Exercitationem veniam vero ea! </ p >
+        
+        <! - Se pone Lorem y presionamos Tab para que autocomplete con un texto prueba ->
+        <! - La etiqueta em pone en cursivas las letras, es decir, Italicas ->
+        < p > Lorem ipsum, dolor sit < em > amet consectetur adipisicing elit. </ em > Suscipit < span > libero aspernatur </ span > saepe doloribus officia labore aliquam nobis excepturi ipsa iste provident veniam aut asperiores, earum voluptate quos vitae odio tempore. </ p >
+        <! - span permite diferenciar para utilizar en CSS y resaltarlas, pero directo en HTML no hace nada ->
 
-    <h1>Hola me llamo Sharon Malfavon</h1>
-@@ -48,7 +48,16 @@ <h6>Hola soy un h6</h6>
-    </ol>
+        < h3 > Citas: </ h3 >
+        <! - Para hacer citas ponemos blockquote ->
+        < blockquote >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique omnis commodi provident mollitia cumque? Menos reprehenderit commodi velit illum, iste omnis delectus quibusdam necessitatibus fuga dolore corrupti architecto? ¡Noche, repellendus!
+        </ blockquote >
+        <! - La etiqueta hr dibuja una linea horizontal, tampoco tiene etiqueta de cierre, pero la cerrramos .-->
+        < h />
 
-    <hr/>
-    <img  alt="Imagen de bob esponja, bob esponja y gary" title="Fondo de bikini"  width="200" src="assets/images/hora-aventura.jpg" />
-    <img  alt="Imagen de bob esponja, bob esponja y gary" title="Fondo de bikini"  height="200" src="assets/images/hora-aventura.jpg" />
+        <! - Podemos usar lorem * 5 o un número para que genere más o menos texto ->
+        <! - Por más que pongamos espacios dentro de una P no nos lo dará, debemos usar una etiqueta, se llama Br, no cierre pero la cerrramos por buenas prácticas ->
+        < p > 
+            ¿De dónde viene?
+            < Br /> <! - Representa Un salto de Linea ->
+            < Br />
+            Contrariamente a la creencia popular, Lorem Ipsum no es simplemente un texto aleatorio. Tiene sus raíces en una pieza de la literatura latina clásica del 45 a. C., por lo que tiene más de 2000 años. Richard McClintock, profesor de latín en Hampden-Sydney College en Virginia, buscó una de las palabras latinas más oscuras, consectetur, de un pasaje de Lorem Ipsum, y revisando las citas de la palabra en la literatura clásica, descubrió la fuente indudable.
+            < Br />
+            Lorem Ipsum proviene de las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" (Los extremos del bien y del mal) de Cicerón, escrito en el 45 a. C. Este libro es un tratado de teoría de la ética, muy popular durante el Renacimiento. La primera línea de Lorem Ipsum, "Lorem ipsum dolor sit amet ..", proviene de una línea en la sección 1.10.32.
+            El fragmento estándar de Lorem Ipsum utilizado desde el siglo XVI se reproduce a continuación para los interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" de Cicerón también se reproducen en su forma original exacta, acompañadas de versiones en inglés de la traducción de 1914 de H. Rackham.
+        </ p >
 
-    <div>
-        Soy un bloque
-    </div>
-    <div>
-        Soy otro bloque
-    </div>
+        < h3 > Lista Ordenada: </ h3 >
+        <! - Hay 2 tipos de listas, las ordenadas y las deordenadas .-->
+        < ol >  <! - Lista ordenada, veremos que nos lista por números ->
+            < li > Perros </ li >  <! - Elemento de lista ->
+            < li > Gatos </ li >
+            < li > Pajaros </ li >
+            < li > Osos </ li >
+            < li > Peces </ li >
+        </ ol >
 
-    <a href="pagina2.html">Página 2</a>
+        < h3 > Lista Desordenada: </ h3 >
+        < ul >  <! - desorden List, veremos que nos lo lista por punto ->
+            < li > Perros </ li >  <! - Elemento de lista ->
+            < li > Gatos </ li >
+            < li > Pajaros </ li >
+            < li > Osos </ li >
+            < li > Peces </ li >
+        </ ul >
 
-</body>
-=======
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <!--  <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <script src="assets/js/bootstrap.min.js"></script>
+        < h3 > Anidación de listas: </ h3 >
+        <! - Podemos hacer SubListas ->
+        < ol >  <! - Lista ordenada, veremos que nos lista por números ->
+            < li > Perros:
+                < ol >  <! - De nuevo Lista por números. Será una lista dentro de un elemento ->
+                    < li > Chihuahua </ li >
+                    < li > Dalmata </ li >
+                    < li > Husky </ li >
+                    < li > Labrador </ li >
+                    < li > Pastor Alemán </ li >
+                </ ol >
+            </ li > 
+            < li > Gatos:
+                < ul >  <! - Lista por puntos ->
+                    < li > Blanco </ li >
+                    < li > Negro </ li >
+                    < li > Pardo </ li >
+                </ ul >
+            </ li >
+            < li > Pajaros </ li >
+            < li > Osos </ li >
+            < li > Peces </ li >
+        </ ol >
 
-        <title>Aprendiendo Bootstrap</title>
-    </head>
-    <body>
-@@ -199,5 +200,7 @@ <h1 class="display-3">Bienvenidos al bootcamp de Java Full Stack - Generation</h
-              </div>
+        < h />
+        < h3 > Imagen: </ h3 >
+        <! - Imagen y propiedades: ->
+        <! - Width se refiere al Ancho, Height significa la altura. Se recomienda modificar sólo un valor para evitar que se deforme la imágen. Permite guardar la proporción de la imagen. Si no se ponel el "alt" se penaliza mucho el SEO ->
+        < Img  src =" https://images.unsplash.com/photo-1583634852966-130c15654305?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80 " alt =" Imagen de Maquina Gamer " título =" Maquinita Mario bros " width =" 600 "/> <! - Coloca una imagen, en este caso es mediante un enlace, es otra etiqueta sin cierre. El alt es una descripción de la imagen, Title es un texto aparece cuando el cursos se posa sobre la imágen .-->
+        < img  src = " Assets / img / Gamer.jpg " width = " 600 " /> <! - En este caso la imagen está dentro de mi directorio, esa imagen está dentro de la carpeta "img". IMPORTANTE: Poner el formato de la imagen ->
+        <! - ../ nos saca de una carpeta ->
 
-        </main>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
->>>>>>> b8c3b6f522c6bad86041de58e3f72b74adb51b16
-</html>
+        <! - Div permite generar bloques. Este tipo de etiquetas permite una distribución entre bloques para que cada uno se centre en algo en específico. Tendrá sentido en CSS ->
+        < div >
+            Soy un bloque.
+        </ div >
+        < div >
+            Soy otro bloque.
+        </ div >
+
+        <! - Esta etiqueta se utiliza para poner enlaces. En general puede hacer una redirección. ->
+        <! - La propiedad href indica donde se redirige, la propiedad target = "self" lo que hace es abrir la página en la misma pestaña. con target = "_ blank" abré la página en otra pestaña ->
+
+        < Un  href = " https://yanndesigner.000webhostapp.com/ " target =" _self " > Mi sitio web </ a >  <! - Abre en La Misma Pestaña ->
+        < Un  href = " https://yanndesigner.000webhostapp.com/ " target =" _blank " > Mi sitio web en otra Pestaña </ a >  <! - Abre en otra Pestaña ->
+
+        < Un  href = " pagina2.html " > Mandar Al Otro html </ a >  <! - Estamos Aqui redireccionando a Contenidos locales. ->
+    </ cuerpo >
+</ html >
+<! - alt + mayús + a ->
+<! - ->
